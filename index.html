@@ -3,294 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio شخصی - Saleh Gholami">
-    <title>Portfolio | Saleh Gholami</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Moh. Saleh Gholami - Developer Portfolio">
+    <title>Moh. Saleh Gholami</title>
+    <link rel="stylesheet" href="coming-soon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrixCanvas"></canvas>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <div class="logo-container">
             <div class="logo">
-                <a href="#home">Saleh Gholami</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">خانه</a></li>
-                <li><a href="#about">درباره من</a></li>
-                <li><a href="#skills">مهارت‌ها</a></li>
-                <li><a href="#projects">پروژه‌ها</a></li>
-                <li><a href="#contact">تماس</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <h1 class="logo-text">Moh. Saleh Gholami</h1>
+                <p class="logo-subtitle">iSalehGholami@</p>
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">سلام، من <span class="highlight">محمدصالح غلامی</span> هستم</h1>
-                <p class="hero-subtitle">توسعه‌دهنده و برنامه‌نویس</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">مشاهده پروژه‌ها</a>
-                    <a href="#contact" class="btn btn-secondary">تماس با من</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/isalehgholami" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/isalehgholami" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:contact@isalehgholami.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <i class="fas fa-user"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">درباره من</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        من یک توسعه‌دهنده مشتاق و خلاق هستم که علاقه‌مند به ساخت راه‌حل‌های نوآورانه و کاربردی است.
-                        با تمرکز بر کیفیت کد و تجربه کاربری عالی، به دنبال ایجاد پروژه‌هایی هستم که تفاوت ایجاد کنند.
-                    </p>
-                    <p>
-                        من به یادگیری مداوم باور دارم و همیشه به دنبال تکنولوژی‌های جدید و بهترین روش‌های توسعه هستم.
-                        کار تیمی و همکاری را ارزشمند می‌دانم و از چالش‌های جدید استقبال می‌کنم.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">پروژه</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">سال تجربه</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">رضایت</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">مهارت‌ها</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML/CSS</h3>
-                    <p>طراحی و ساخت رابط کاربری ریسپانسیو و مدرن</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>توسعه وب اپلیکیشن‌های تعاملی و پویا</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React</h3>
-                    <p>ساخت اپلیکیشن‌های تک صفحه‌ای مدرن</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3>Python</h3>
-                    <p>توسعه بک‌اند و اتوماسیون</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Git/GitHub</h3>
-                    <p>مدیریت نسخه و همکاری تیمی</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database</h3>
-                    <p>طراحی و مدیریت پایگاه داده</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">پروژه‌ها</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="https://github.com/isalehgholami" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>پروژه نمونه ۱</h3>
-                        <p>توضیحات پروژه و تکنولوژی‌های استفاده شده در این پروژه</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="https://github.com/isalehgholami" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>پروژه نمونه ۲</h3>
-                        <p>توضیحات پروژه و تکنولوژی‌های استفاده شده در این پروژه</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="https://github.com/isalehgholami" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>پروژه نمونه ۳</h3>
-                        <p>توضیحات پروژه و تکنولوژی‌های استفاده شده در این پروژه</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">تماس با من</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>ایمیل</h3>
-                            <p>contact@isalehgholami.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>GitHub</h3>
-                            <p>github.com/isalehgholami</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>LinkedIn</h3>
-                            <p>linkedin.com/in/isalehgholami</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="نام شما" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="ایمیل شما" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="پیام شما" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">ارسال پیام</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; ۲۰۲۴ Saleh Gholami. تمامی حقوق محفوظ است.</p>
-            <div class="footer-social">
-                <a href="https://github.com/isalehgholami" target="_blank" aria-label="GitHub">
+        <div class="social-section">
+            <!-- <p class="social-title">مرا در شبکه‌های اجتماعی دنبال کنید</p> -->
+            <div class="social-links">
+                <a href="https://github.com/isalehgholami" target="_blank" class="social-link" aria-label="GitHub">
                     <i class="fab fa-github"></i>
+                    <span>GitHub</span>
                 </a>
-                <a href="https://linkedin.com/in/isalehgholami" target="_blank" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/isalehgholami" target="_blank" class="social-link" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
                 </a>
-                <a href="mailto:contact@isalehgholami.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
+                <a href="https://t.me/sgsoft" target="_blank" class="social-link" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
                 </a>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Glitch Effect Overlay -->
+    <div class="glitch-overlay"></div>
+
+    <script src="coming-soon.js"></script>
 </body>
 </html>
